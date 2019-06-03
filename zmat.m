@@ -11,11 +11,13 @@ function [output, info]=zmat(input, iscompress, method)
 %
 % input:
 %      input: a string, int8 or uint8 array
-%      iscompress: (optional) if iscompress is 1, zmat compresses the input, 
-%             if 0, it decompresses the input. Default value is 1.
+%      iscompress: (optional) if iscompress is 1, zmat compresses/encodes the input, 
+%             if 0, it decompresses/decodes the input. Default value is 1.
 %      method: (optional) compression method, currently, zmat supports the below methods
 %             'zlib': zlib/zip based data compression (default)
 %             'gzip': gzip formatted data compression
+%             'lzip': lzip formatted data compression
+%             'lzma': lzma formatted data compression
 %             'base64': encode or decode use base64 format
 %
 % output:
